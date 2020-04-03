@@ -17,6 +17,7 @@ public class ClientWindow extends JFrame{
         allNewsArea = new JTextArea(10,50);
         allNewsArea.setLineWrap(true);
         allNewsArea.setFont(new Font("Dialog", Font.PLAIN, 14));
+        allNewsArea.setEditable(false);
         JScrollPane allNewsPane = new JScrollPane(allNewsArea);
         allNewsPane.setBorder(BorderFactory.createTitledBorder("Новости"));
         allNewsPane.setBounds(25,10,550,500);
